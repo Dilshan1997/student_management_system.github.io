@@ -52,3 +52,19 @@ docRef.get().then((snapshot) => {
     renderInfo(doc)
   });
 });
+
+//saving details
+reg_form.addEventListener("submit",(e)=>{
+  e.preventDefault()
+  db.collection('Student_details').add({
+    full_name:reg_form.f_name.value,
+    address:reg_form.address.value,
+    birthdate:reg_form.bd.value,
+    age:reg_form.age.value,
+    national:reg_form.national.value,
+    school:reg_form.school.value,
+    phone_no:reg_form.phone_no.value
+
+  });
+  console.log("save")
+});

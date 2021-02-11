@@ -142,7 +142,7 @@
 
             <div class="form-container">
                 
-                <form id="add-student-form" novalidate method="post" >
+                <form id="add-student-form" novalidate method="post"  name="reg_form">
                     <h3>Student details</h3>
                     <div class="row">
                         
@@ -151,7 +151,7 @@
                    
                    <div class="form-group">
                        <label>Full name (required)</label>
-                       <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" />
+                       <input type="text" required data-pristine-required-message="Please choose a username" class="form-control"  name="f_name"/>
                    </div>
                   
                    <!-- <div class="form-group">
@@ -160,15 +160,15 @@
                    </div> -->
                  <div class=" form-group">
                     <label>Birthday</label>
-                    <input type="date"  required data-pristine-required-message="You must enter your birthday" required class="form-control"  />
+                    <input type="date"  required data-pristine-required-message="You must enter your birthday" required class="form-control" name="bd" />
                  </div>
                    <div class="form-group">
                        <label>Your age (required, min. 3)</label>
-                       <input type="number" min="3" max='18' data-pristine-min-message="You must be at least 3-years-old" data-pristine-max-message=" You must be at least under than 18-years-old" required class="form-control" value="10" />
+                       <input type="number" min="3" max='18' data-pristine-min-message="You must be at least 3-years-old" data-pristine-max-message=" You must be at least under than 18-years-old" required class="form-control" value="10" name="age"/>
                    </div>
                    <div class="form-group">
                     <label>Address (required)</label>
-                    <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" />
+                    <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" name="address"/>
                 </div>
             </div>
                    <!-- <div class="form-group">
@@ -187,19 +187,19 @@
                    <div class="col-6">
                    <div class="form-group">
                     <label>National (required)</label>
-                    <input type="text" required data-pristine-required-message="Please enter your national" class="form-control" />
+                    <input type="text" required data-pristine-required-message="Please enter your national" class="form-control" name="national" />
                 </div>
                 <div class="form-group">
                     <label>School name</label>
-                    <input type="text"  data-pristine-required-message="Please enter your school name" class="form-control" />
+                    <input type="text"  data-pristine-required-message="Please enter your school name" class="form-control" name="school"/>
                 </div>
                 <div class="form-group">
                     <label>Phone number</label>
-                    <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+                    <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" name="phone_no"/>
                 </div>
                 <div class="form-group">
                     <label>Email </label>
-                    <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" />
+                    <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" name="mail"/>
                 </div>
             </div>
         </div>
@@ -208,81 +208,81 @@
                 <h3>Mother's Details</h3>
             <div class="form-group">
                 <label>Name with initials (required)</label>
-                <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" />
+                <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" name="m_name"/>
             </div>
             <div class="form-group">
                 <label>Address (required)</label>
-                <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" />
+                <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" name="m_address"/>
             </div>
             <div class="form-group">
                 <label>NIC</label>
-                <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+                <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="m_nic"/>
             </div>
             <div class="form-group">
                 <label>Job</label>
-                <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+                <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="m_job"/>
             </div>
             <div class="form-group">
                 <label>Phone number</label>
-                <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+                <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" name="m_phone"/>
             </div>
             <div class="form-group">
                 <label>Email </label>
-                <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" />
+                <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" name="m_email"/>
             </div>
         </div>
         <div class="col-4">
             <h3>Father's Details</h3>
         <div class="form-group">
             <label>Name with initials (required)</label>
-            <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" />
+            <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" name="fa_name"/>
         </div>
         <div class="form-group">
             <label>Address (required)</label>
-            <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" />
+            <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" name="f_address"/>
         </div>
         <div class="form-group">
             <label>NIC</label>
-            <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+            <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="f_nic"/>
         </div>
         <div class="form-group">
             <label>Job</label>
-            <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+            <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="f_job"/>
         </div>
         <div class="form-group">
             <label>Phone number</label>
-            <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+            <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" name="f_phone"/>
         </div>
         <div class="form-group">
             <label>Email </label>
-            <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" />
+            <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" name="f_email"/>
         </div>
     </div>
     <div class="col-4">
         <h3>Owner's Details</h3>
     <div class="form-group">
         <label>Name with initials (required)</label>
-        <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" />
+        <input type="text" required data-pristine-required-message="Please choose a username" class="form-control" name="o_name"/>
     </div>
     <div class="form-group">
         <label>Address (required)</label>
-        <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" />
+        <input type="text" required data-pristine-required-message="Please enter your address" class="form-control" name="o_address"/>
     </div>
     <div class="form-group">
         <label>NIC</label>
-        <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+        <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="o_nic"/>
     </div>
     <div class="form-group">
         <label>Job</label>
-        <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+        <input type="number"  data-pristine-required-message="Please enter your phone number" class="form-control" name="o_job"/>
     </div>
     <div class="form-group">
         <label>Phone number</label>
-        <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" />
+        <input type="tel"  data-pristine-required-message="Please enter your phone number" class="form-control" name="o_phone"/>
     </div>
     <div class="form-group">
         <label>Email </label>
-        <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" />
+        <input type="email" required data-pristine-required-message="Please enter your Email" class="form-control" name="o_email"/>
     </div>
 </div>
         </div>
