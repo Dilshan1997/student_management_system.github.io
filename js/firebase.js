@@ -17,7 +17,7 @@ firebase.analytics();
 
 const db = firebase.firestore();
 db.settings = ({ timestampsInSnapshots: true });
-console.log(db)
+
 
 
 

@@ -1,7 +1,7 @@
 var pristine;
 window.onload = function () {
 
-   var form = document.getElementById("form1");
+   var form = document.getElementById("add_student_form");
 
    pristine = new Pristine(form);
 
