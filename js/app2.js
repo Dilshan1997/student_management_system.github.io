@@ -1,0 +1,1 @@
+console.log(form-student.id.value)
